@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/icons/home.png",
+      "sha1": "0625ed63fc242aa11effe38327b5f83b77828120"
+    },
+    {
+      "path": "assets/icons/jobsearch.png",
+      "sha1": "5594df1a363e89fd55c25e1954562917186fa105"
+    },
+    {
+      "path": "assets/icons/profile.jpg",
+      "sha1": "ca1abcaad6e623bcf75b035c3e65b3e2d5462085"
+    },
+    {
+      "path": "assets/icons/search.png",
+      "sha1": "c728b99b183f3d952c521a71688d1430060742b2"
+    },
+    {
+      "path": "assets/fonts/Anton-Regular.ttf",
+      "sha1": "49243712633711db3b673d0b03536e0180cd7ddb"
+    },
+    {
+      "path": "assets/fonts/FjallaOne-Regular.ttf",
+      "sha1": "a8adc4f2d41051ad8e4b52b27bbdc997a4a81507"
+    },
+    {
+      "path": "assets/fonts/Rowdies-Bold.ttf",
+      "sha1": "febaeb3ad737aae56f4db17b1303471a305872a5"
+    },
+    {
+      "path": "assets/fonts/Rowdies-Regular.ttf",
+      "sha1": "2f7b1ab72139c78cfe7abbd49fab9b1bebf44d57"
+    }
+  ]
+}
