@@ -13,15 +13,16 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/components/Home';
-import ScreenB from './src/components/ScreenB';
-import Screenc from './src/components/Screenc';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Details from './src/components/Details';
+import Search from './src/components/Search';
+import Splash from './src/components/Splash';
 function App(){
   const Tab=createNativeStackNavigator()
   return (
 <NavigationContainer>
 <Tab.Navigator>
+<Tab.Screen component={Splash} name='splash' options={{headerShown:false}}></Tab.Screen>
   <Tab.Screen component={Home} name='Home'  options={{
     headerTitle:'',
     tabBarIcon:({focused})=>(
@@ -44,8 +45,14 @@ function App(){
     ),
     
   }}></Tab.Screen>
-  <Tab.Screen options component={Details} name='details'></Tab.Screen>
-  <Tab.Screen component={Screenc} name='ScreenC'></Tab.Screen>
+  <Tab.Screen options={{
+    headerShown:true,
+    headerTitle:'Details'
+  }} component={Details} name='Details'  ></Tab.Screen>
+  <Tab.Screen component={Search} name='Search'options={{
+    title:'Search Results',
+    headerShown:true
+  }}></Tab.Screen>
 </Tab.Navigator>
 </NavigationContainer>
   );

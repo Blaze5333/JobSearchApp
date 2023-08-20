@@ -6,14 +6,14 @@ export const fetchApi=async(query)=>{
         url: 'https://jsearch.p.rapidapi.com/search',
         params: query,
         headers: {
-          'X-RapidAPI-Key':'014abe6e35msh76ef70851596118p1e000fjsn01ac2f8b6c4d',
+          // 'X-RapidAPI-Key':'d995942a83msh0fbeaac7da9a7d9p166d5djsn755c6941d252',
           'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
         }
       };
       try {
-        const response = await axios.request(options);
-        console.log(response.data);
-        return response.data;
+        const response =  await axios.request(options);
+        // console.log(response.data);
+        return response;
     } catch (error) {
         console.error(error);
     }
